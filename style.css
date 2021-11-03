@@ -1,0 +1,80 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+body { /* DEFININDO O ESCOPO DO MEU HTML */
+  background: #bbbfc3;
+  color: #575F7D;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div{
+  display: block; /* informando que a div será um bloco */
+}
+.container {  /* classe de DIV SUPREMA, PAI DE TODAS AS DIVS */
+  width: 500px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+.card-white{
+  background-color: white;
+
+  box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+  padding: 40px; /* espaço interno até a margin */
+  margin: 20px 0px; /* espaço interno entre margin e o box. */
+  text-align: center;  /* TUDO dentro do card white ficara no centro */
+}
+.img-circle {  /* classe */
+  height: 150px;
+  border-radius: 50%;
+}
+h1 {
+ font-size:25px;
+ color: #575F7D;
+}
+#introduction p {  /* ID */
+    margin-bottom: 40px;
+}
+.list-inline > li { /* mexendo na classe mae UL. Com  " list-inline > li", Li vai receber suas configurações */
+  display: inline-block; /* deixando tudo na mesma linha */
+  padding: 0px 20px;
+}
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+h2 {
+ font-size: 20px;
+ color: #536858;
+}
+a { /* copnfiguração de todos os A */
+ text-decoration: none;
+ color: #273469
+}
+.btn-blue{  /* classe referente ao botao  dentro do a*/
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+a:hover {
+ color: #31632a
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
